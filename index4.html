@@ -1,0 +1,22 @@
+<!-- uniquement des lettres en majuscules, minuscules, chiffres et caractères spéciaux -->
+
+<ul>
+    <li><a href="http://localhost/exo-js/index5.html">page 4</a></li>
+</ul>
+
+<h1> uniquement des lettres en majuscules, minuscules, chiffres et caractères spéciaux</h1>
+
+<input type="text" id="inputChiffres">
+<button onclick="validerChiffres()">Valider</button>
+
+<script>
+function validerChiffres() {
+  const input = document.getElementById('inputChiffres');
+  const regex = /^[a-zA-Z-.|?*+()0-9]+$/;
+  if (regex.test(input.value)) {
+    alert('correcte : vous avez entrer que des miniscule / majuscule/ chiffres ou caractere speciaux');
+  } else {
+    alert('pas coreecte mon gars! on nas dit que des miniscules / majuscule/ chiffres ou caractere speciaux');
+  }
+}
+</script>

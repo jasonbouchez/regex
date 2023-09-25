@@ -1,0 +1,21 @@
+<!-- miniscule et majuscule -->
+<ul>
+    <li><a href="http://localhost/exo-js/index4.html">page 3</a></li>
+</ul>
+
+<h1> que des majuscule</h1>
+
+<input type="text" id="inputChiffres">
+<button onclick="validerChiffres()">Valider</button>
+
+<script>
+function validerChiffres() {
+  const input = document.getElementById('inputChiffres');
+  const regex =/^[a-zA-Z]+$/;
+  if (regex.test(input.value)) {
+    alert('correcte : vous avez entrer que des miniscule ou des majuscule');
+  } else {
+    alert('pas coreecte mon gars! on nas dit que des miniscules ou des majuscule');
+  }
+}
+</script>
